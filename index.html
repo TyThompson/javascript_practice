@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<LINK REL=StyleSheet HREF="assets/css/main.css" TYPE="text/css">
+<script type="text/javascript" src="assets/javascripts/validate.js"></script>
+<body>
+	<h1>Welcome! Please create an account below:</h1>
+	<form id="myForm" method="POST" action="success.html">
+		<p>Username: <input id="field_username" title="Username must not be blank and contain only letters, numbers and underscores." type="text" required pattern="\w+" name="username"></p>
+		<p class="note">Username must not be blank and contain only letters, numbers and underscores.</p>
+		<p>Password: <input id="field_pwd1" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1"></p>
+		<p>Confirm Password: <input id="field_pwd2" title="Please enter the same Password as above." type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2"></p>
+		<p class="note">Password must contain at least 6 characters, including UPPER/lowercase and numbers.</p>
+		<p><input type="submit" value="Submit"></p>
+	</form>
+
+	<h5>If this text is green the main.css stylesheet is loaded.</h5>
+<body>
+</html>
